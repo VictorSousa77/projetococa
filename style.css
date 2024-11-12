@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  "Open Sans", sans-serif;
+
+}  
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e51e2a ;
+    clip-path: circle(50% at bottom right );
+}
+
+header{
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 40px 100px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+ .logo{
+
+    position: relative;
+    max-width: 190px;
+
+}
+
+ .navegation ul{
+
+ position: relative;
+ display: flex;
+
+}
+
+.navegation li{
+
+    list-style: none;
+
+}
+
+ .navegation li a{
+    color: rgb(252, 2, 2);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400px;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.navegation li a:hover {
+   
+  transform: scale(1); /* tamanho dos icons  */
+ filter: invert(3); /* iversao e efeito */
+ transform: translateX(-10px);
+ border-radius: 10px;
+color:black;
+transition: 1s;
+
+
+
+}
+
+
+
+
+.container{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .text{
+
+   position: relative;
+   max-width: 600px;
+   margin-right: 20px;
+
+
+}
+
+.container .text h2{
+
+    color: #e51e2a;
+    font-size: 3em;
+   margin-bottom: 10px;
+   line-height: 2.5em;
+   font-weight: 700;
+}
+
+.container .text h2 span{
+
+    font-size: 3.5em;
+    color: #e51e2a;}
+
+.container .text p {
+
+    color: #e8e8e8;
+}
+.container .text a{
+    display: inline-block; /*  */
+    margin-top: 50px; /* distancia da margem de cima  */
+    padding: 10px 25px; 
+    background-color: #e51e2a;
+    color: white;
+    font-weight: 500; /* largura da fonte */
+    text-decoration: none; /* tipo de decoracao */
+    letter-spacing: 1px; /* espaco entre letras  */
+    border-radius: 40px; /* circulo nas bordas */
+    transition: 0.3 ease-in-out;/* transicao efeito */
+}
+
+.container .text a:hover{
+
+  transform: translateY(-10px);
+
+}
+
+.icons{
+
+    position: absolute; /* posicao dos ojetos */
+    bottom: 90px; /* posicao de baixo pra cima */
+    left: 150px; /* psicao da esquerda pra direita */
+    display: flex; /*  */
+    align-items: stretch; /* itens no centro */
+    justify-content: center; /* itens no centro */
+}
+.icons li{
+
+    list-style: none;
+
+
+}
+
+.icons li a{
+    display: inline-block; /* centralizacao */
+    width: 50px;   /* altura */
+    height: 50px; /* largura */
+    border-radius: 50px;  /*  disrtancia da bordas */
+    background: #222;
+    margin-left: 45px; /* distancia das margem esqueda */
+    display: flex; /* display flex */
+    align-items: center;  /* centalizacao de items */
+    justify-content: center;  /* centalizacao */
+    transition: 0.3s ease-in-out;  /* transicao dos itens */
+
+
+}
+
+.icons li a:hover{
+
+  background-color: #e51e2a;
+  transform: translateY(-10px);  /* transicao de baixo para cima  */
+
+    }
+
+.icons li img{
+
+ transform: scale(1); /* tamanho dos icons  */
+ filter: invert(3); /* iversao e efeito */
+
+}
+
+.boximg{
+position: absolute; /* posicao absoluta */
+right: 0; /* sempre a direita */
+bottom: -30px;  /* altura da imagem de baixo parra cima */
+
+
+}
+
+.boximg img{
+
+    width: 200px; /* largura */
+
+}
+
+.boximg .img01{
+
+    transform: rotate(-15deg); /* rrptacao da imagem */
+
+}
+
+.boximg .img02{
+  
+   transform: rotate(5deg);
+
+}
+.boximg .img03{
+
+    transform: rotate(-15deg); 
+
+
+}
+
+.boximg .img04{
+
+    transform: rotate(-15deg);
+}
+
